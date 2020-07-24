@@ -1,6 +1,26 @@
-body {font-family: Arial, Helvetica, sans-serif;}
-* { box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+header {
+  overflow: hidden;
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #24252a;
+}
+
+.logo {
+  margin-right: auto;
+}
+
 #navbar {
   overflow: hidden;
   background-color: #333;
@@ -112,32 +132,74 @@ i {
   font-weight: bolder;
 }
 
-input[type=text], select, textarea {
+.banner
+{
+margin-top: 98px;
+margin-bottom: 35px;
+background-image: url(../images/mulenzi-feed.jpeg);
+background-size: contain;
+background-size: cover;
+background-position: 100% 100%; 
+background-repeat: no-repeat;
+height: 350px;
+}
+
+.banner-text {
+width: 450px;
+background-color: rgba(19, 19, 19, 0.8);
+color: azure;
+padding: 3%;
+position: relative;
+left: 3%;
+top: 8%;
+border-radius: 15px;
+
+}
+
+.about-image{
+  width: 25%;
+  float: left;
+  margin-right: 20px;
+  padding-left: 10px;
+}
+
+.about-image img{
   width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+  height: 300px;
+  margin-top: 30px;
 }
 
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.about-text{
+  text-transform: initial;
+  text-align: center;
+  position: relative;
+  max-width: 1000px;
+  font-size: 20px;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
+  margin-top: 50px;
+  margin-bottom: 100px;
+
 }
 
-input[type=submit]:hover {
-  background-color: #45a049;
+.about-me h1 {
+  color: rgb(31, 88, 211);
+  background-color:  honeydew;
+font-size: 60px;
+text-align: center;
+margin-bottom: 10px;
 }
 
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
+.footer p {
+  width: 100%;
+  margin-top: 5px;
+  color: rgb(255, 255, 250);
+  text-align: center;
+  background-color: rgb(26, 26, 26);
+}
+

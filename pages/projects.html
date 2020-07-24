@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>projectspage</title>
+<link rel="stylesheet" href="../css/projects.css">
+</head>
+<body>
+  <nav id="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+          <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+          <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+        </svg>
+      </a>
+    </span>  
+    <ul class="navbar-nav">
+      <li><a href="../index.html">Home</a></li>
+      <li>
+        <div id="dropdown">
+          <button id="dropbtn">INFORMATION
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div id="dropdown-content">
+            <a href="./contact me.html">CONTACT ME</a>
+            <a href="./feedback.html">FEED BACK</a>
+            <a href="./projects.html">PROJECTS</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#about">ABOUT ME</a>
+    <hr>
+    <a href="./pages/contact me.html">CONTACT ME</a>
+    <a href="./pages/feedback.html">FEED BACK</a>
+    <a href="./pages/projects.html">PROJECTS</a>
+  </div>
+    <div id="welcome-section">
+        <div id="welcome-text">
+          <h1>INTERPRETER ONLINE</h1>
+          <h2>Welcome to our interpretation service</h2>
+          <p>This is upcoming project where one will be able to book an interpreter online anywhere.</p>
+          <p>Like if a Deaf suspect is stuck at the police due to language barrier ,they just order one throug our platform.</p>
+        </div>
+        <div class="welcome-btn">
+          <button>SOUNDS GREAT, REGISTER BELOW</button>
+        </div>
+      </div>
+      <form action="action_page.php">
+        <div class="container">
+          <hr>
+    <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" id="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+      
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+          <hr>
+      
+          <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+          <button type="submit" class="registerbtn">Register</button>
+        </div>
+      
+        <div class="container signin">
+          <p>Already have an account? <a href="#">Sign in</a>.</p>
+        </div>
+      </form>

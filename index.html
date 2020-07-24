@@ -5,21 +5,48 @@
         <title>Mulenzi's Portfolio</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../css/home page.css">
-                
-    </head>
-    <body>
-        <header>
-<nav>
-        <ul class="navbar">
-              <div id="content">
-    <li> <a href="./feedback.html">FEED BACK</a></li>
-    <li> <a href="./projects.html"></a>PROJECTS</li>
-    <li> <a href="./contact me.html"></a>CONTACT ME</li>
-           </ul>
-          </div>
-    </nav>
-        </header>
+        <link rel="stylesheet" href="./css/main.css">
+        </head>
+<body>
+    <nav id="navbar">
+        <span class="open-slide">
+          <a href="#" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+              <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+              <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+            </svg>
+          </a>
+        </span>  
+        <ul class="navbar-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About ME</a></li>
+          <li>
+            <div id="dropdown">
+              <button id="dropbtn">INFORMATION
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div id="dropdown-content">
+                <a href="./pages/contact me.html">CONTACT ME</a>
+                <a href="./pages/feedback.html">FEED BACK</a>
+                <a href="./pages/projects.html">PROJECTS</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    
+      <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#about">ABOUT ME</a>
+        <hr>
+        <a href="./pages/contact me.html">CONTACT ME</a>
+        <a href="./pages/feedback.html">FEED BACK</a>
+        <a href="./pages/projects.html">PROJECTS</a>
+      </div>
+    
+</body>
         <main>
             <div class="banner">
                 <div class="banner-text">
@@ -34,7 +61,7 @@
             <div class="about-me" id="about">
                 <h1> About Mulenzi!</h1>
                 <div class="about-image">
-                    <img src="../images/mulenzi-about.JPG">
+                    <img src="./images/mulenzi-about.JPG">
                  </div> 
                 <div class="about-text">
                        <p>He holds a bachelors degeree in procurement and logistics management from kyambogo university, he has been into voluntary projects majorly for disability inclusion advocacy and worked as a sign language instructor with uganda national association of the Deaf, he has been voluntaring as aspecial needs education teacher and been teaching Deaf in mukono and kayunga, currently doing computer programming course with OUTBOX HUB</p>

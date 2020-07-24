@@ -1,5 +1,9 @@
-body {font-family: Arial, Helvetica, sans-serif;}
-* { box-sizing: border-box;
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:"Arial", Serif;
+  background-color:#f4f4f4ec;
 }
 #navbar {
   overflow: hidden;
@@ -112,32 +116,109 @@ i {
   font-weight: bolder;
 }
 
-input[type=text], select, textarea {
+#welcome-section{
+  background-image: url(../images/mulenzi-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
+  padding-top: 0px;
+  margin-top: 0px;
+  display: block;
+  height: 100vh;
+}
+#welcome-text{
+  width:550px;
+  background-color: white;
+  text-transform: initial;
+  padding: 30px;
+  position: relative;
+  left: 90px;
+  top: 90px;
+  opacity: 0.8;
+}
+.welcome-btn{
+  width:550px;
+  text-align: center;
+  padding: 30px;
+  position: relative;
+  left: 90px;
+  top: 90px;
+}
+.welcome-btn button{
+  width: 60%;
+  border: 1px solid rgba(102, 102, 102, 0.918);
+  background-color: deeppink;
   padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+.welcome-btn a{
+  text-decoration: none;
+  color: aliceblue;
+}
+@media(max-width:760px){
+  #welcome-text{
+    width:91%;
+    color: floralwhite;
+    position: static;
+    background-size: cover;
+    opacity: 1;
+  }
+  .welcome-btn{
+    display: none;
+  }
+  #welcome-section{
+    background-image:none;
+    width: 100%;
+    height: 20%;
+  }
+  .container {
+    padding: 16px;
+    text-align: center;
+  }
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
 }
 
-input[type=submit] {
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
   background-color: #4CAF50;
   color: white;
-  padding: 12px 20px;
+  padding: 16px 20px;
+  margin: 8px 0;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
 }
 
-input[type=submit]:hover {
-  background-color: #45a049;
+.registerbtn:hover {
+  opacity:1;
 }
 
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
 }
